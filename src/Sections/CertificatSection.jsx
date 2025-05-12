@@ -31,20 +31,20 @@ const Certificat = () => {
       categoryColor: "text-yellow-500 bg-yellow-100",
       title: "Certificat  in Web Development",
       description:
-        "Établissement privé de formation professionnelle",
+        "Établissement  de formation professionnelle",
       author: "Annaba",
       date: "Mars 04, 2023",
     },
-        {
-      image: sql,
-      category: "Web Development",
-      categoryColor: "text-yellow-500 bg-yellow-100",
-      title: "SQL Certificate",
-      description:
-        "Coursera - Meta",
-      author: "En - ligne",
-      date: "Jan 01, 2024",
-    },
+    // {
+//   image: sql,
+//   category: "Web Development",
+//   categoryColor: "text-yellow-500 bg-yellow-100",
+//   title: "SQL Certificate",
+//   description: "Coursera - Meta",
+//   author: "En - ligne",
+//   date: "Jan 01, 2024",
+// }
+
   ];
 
   return (
@@ -64,9 +64,9 @@ const Certificat = () => {
           </p>
         </div>
 
-        <div className="grid max-w-md grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-x-16 gap-y-12">
+        <div className="grid max-w-md  grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-x-16 gap-y-12">
           {cards.map((card, index) => (
-            <div key={index}>
+            <div key={index} className='border-1 p-3 rounded-md border-gray-100'>
               <span href="#" title="" className="block aspect-w-4 aspect-h-3">
                 <img className="object-cover w-full h-full rounded-md" src={card.image} alt="" />
               </span>
@@ -86,6 +86,17 @@ const Certificat = () => {
             </div>
           ))}
         </div>
+
+          <div className=' pt-12  text-center flex container justify-center items-center'>
+            <button className="relative group cursor-pointer text-sky-50  overflow-hidden h-16 w-64 rounded-md bg-sky-800 p-2 flex justify-center items-center font-extrabold">
+
+              <div className="absolute top-3 right-20 group-hover:top-12 group-hover:-right-12 z-10 w-40 h-40 rounded-full group-hover:scale-150 group-hover:opacity-50 duration-500 bg-sky-900"></div>
+              <div className="absolute top-3 right-20 group-hover:top-12 group-hover:-right-12 z-10 w-32 h-32 rounded-full group-hover:scale-150 group-hover:opacity-50 duration-500 bg-sky-800"></div>
+              <div className="absolute top-3 right-20 group-hover:top-12 group-hover:-right-12 z-10 w-24 h-24 rounded-full group-hover:scale-150 group-hover:opacity-50 duration-500 bg-sky-700"></div>
+              <div className="absolute top-3 right-20 group-hover:top-12 group-hover:-right-12 z-10 w-14 h-14 rounded-full group-hover:scale-150 group-hover:opacity-50 duration-500 bg-sky-600"></div>
+              <p className="z-10">SEE MORE</p>
+            </button>
+          </div>
 
       </div>
     </section>

@@ -63,7 +63,7 @@ const Resume = () => {
               <div className="absolute left-0.5 top-7 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
               <div>
                 <h4 className="text-xl font-medium text-gray-800">Startup Degree</h4>
-                <h5 className="text-gray-500">2020 - 2023</h5>
+                <h5 className="text-gray-500">2022 - 2023</h5>
                 <p className="text-gray-600 font-medium">Badji Mokhtar University , Annaba , Algeria</p>
                 <p className="text-gray-600">
                     Invention Patent (Startup) 
@@ -80,7 +80,7 @@ const Resume = () => {
               <div className="absolute left-0.5 top-7 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
               <div>
                 <h4 className="text-xl font-medium text-gray-800">High School Diploma</h4>
-                <h5 className="text-gray-500">2022 - 2023</h5>
+                <h5 className="text-gray-500">2020</h5>
                 <p className="text-gray-600 font-medium">Technical High School, Annaba , Algeria</p>
                 <p className="text-gray-600">
                     Bachelor's degree in Mathematical Techniques and Electrical Engineering. 
@@ -219,7 +219,7 @@ const Resume = () => {
                <div>
                 <h4 className="text-xl font-medium text-gray-800">SQL Certificate</h4>
                  <h5 className="text-gray-500">2024 </h5>
-                <p className="text-gray-600 font-medium">Coursera</p>
+                <p className="text-gray-600 font-medium">Coursera - Meta</p>
               </div>
             </div>
 
