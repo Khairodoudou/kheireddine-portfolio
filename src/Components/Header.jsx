@@ -1,3 +1,6 @@
+
+import logo from '../images/logo.png';
+
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react'; // Icônes
 
@@ -7,11 +10,11 @@ function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="bg-white shadow-md fixed w-full z-50">
+    <header className="bg-white shadow-md p-2 fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-14">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">
-          <a href="/">Kheireddine</a>
+          <a href="/"><img className='w-40 bg-white' src={logo} alt='logo'  /></a>
         </div>
 
         {/* Menu Desktop */}

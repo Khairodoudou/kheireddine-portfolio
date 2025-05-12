@@ -59,7 +59,7 @@ const Certificat = () => {
               </span>
             </h2>
           <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
-        " Discover our latest certificates recognizing excellence and growth "
+         Discover our latest certificates recognizing excellence and growth 
 
           </p>
         </div>

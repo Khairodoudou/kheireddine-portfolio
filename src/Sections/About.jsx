@@ -50,7 +50,7 @@ function About() {
               <span className="font-bold text-gray-900">Phone :</span> <span className='text-gray-700'>+ 213696566905</span>
             </li>
             <li>
-              <span className="font-bold text-gray-900">Military situation : </span> <span className='text-gray-700'> Exempted (carte jaune)</span>
+              <span className="font-bold text-gray-900">Military situation : </span> <span className='text-gray-700'>Carte jaune</span>
             </li>
             <li>
               <span className="font-bold text-gray-900">Freelance :</span> <span className='text-gray-700'> Available</span>
