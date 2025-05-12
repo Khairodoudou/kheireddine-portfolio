@@ -28,8 +28,8 @@ function About() {
   
             <div>
 
-              <p className="mt-4 text-lg text-gray-700">
-              Passionate about innovation and determined to excel in my field, I am committed to pushing my limits to achieve professional excellence. <span className='font-semibold'>Meticulous</span>, <b>creative</b>, and always <b>seeking</b> new <b>challenges</b>, I turn ideas into concrete solutions with <b>precision</b> and <b>ambition</b>.
+              <p className="mt-4 text-lg text-gray-500">
+              Passionate about innovation and determined to excel in my field, I am committed to pushing my limits to achieve professional excellence. <span className='text-gray-900'>Meticulous</span>, <span className='text-gray-900'>creative</span>, and always <span className='text-gray-900'>seeking</span> new <span className='text-gray-900'>challenges</span>, I turn ideas into concrete solutions with <span className='text-gray-900'>precision</span> and <span className='text-gray-900'>ambition</span>.
               </p>
               
               <ul className="space-y-3 text-lg pt-2">
@@ -63,7 +63,7 @@ function About() {
           </div>
         </div>
 
-        <div className=' pt-12 bg-gray-50  text-center flex container justify-center items-center'>
+      <div className=' pt-12 bg-gray-50  text-center flex container justify-center items-center'>
 <button className="relative group cursor-pointer text-sky-50  overflow-hidden h-16 w-64 rounded-md bg-sky-800 p-2 flex justify-center items-center font-extrabold">
 
   <div className="absolute top-3 right-20 group-hover:top-12 group-hover:-right-12 z-10 w-40 h-40 rounded-full group-hover:scale-150 group-hover:opacity-50 duration-500 bg-sky-900"></div>
