@@ -31,7 +31,7 @@ function Hero() {
   }, [displayedText, isDeleting, index]);
 
   return (
-    <section className="pt-20 overflow-hidden bg-white md:pt-14 sm:pt-20 2xl:pt-20">
+    <section id='Home' className="pt-20 overflow-hidden bg-white md:pt-14 sm:pt-20 2xl:pt-20">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid items-center grid-cols-1 md:grid-cols-2">
           <div className='md:text-start sm:text-center'>

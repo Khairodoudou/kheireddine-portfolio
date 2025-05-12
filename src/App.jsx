@@ -5,6 +5,7 @@ import Resume from "./Sections/Resume.jsx";
 import Contactt from "./Sections/Contact.jsx";
 import Certificat from "./Sections/CertificatSection.jsx";
 import Longage from "./Sections/langage.jsx";
+import EndSection from "./Sections/EndSection.jsx";
 import Footer  from "./Components/Footer.jsx"
 import { Contact } from "lucide-react";
 
@@ -22,6 +23,7 @@ function App() {
           <Certificat/>
           <Contactt/>
           <Longage/>
+          <EndSection/>
           <Footer/>
       </div>
   )

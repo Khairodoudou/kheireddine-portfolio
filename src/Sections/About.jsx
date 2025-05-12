@@ -5,7 +5,7 @@ import about_kheireddine from '../images/about.jpg';
 function About() {
     return (
       <div>
-      <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
+      <section id='About' className="py-10 bg-gray-50 sm:py-16 lg:py-24">
         <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
           <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center">
             <h2 className="text-3xl font-bold leading-tight text-center justify-center items-center text-black sm:text-4xl lg:text-4xl lg:leading-tight">
