@@ -7,7 +7,7 @@ const Contactt = () => {
         <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-4xl lg:leading-tight">
             <span className="relative inline-block">
-              <span className="absolute inline-block w-full h-2 bg-red-300 bottom-1.5"></span>
+              <span className="absolute inline-block w-full h-2 bg-purple-300 bottom-1.5"></span>
               <span className="relative">Contact US</span>
             </span>
           </h2>
@@ -138,72 +138,95 @@ const Contactt = () => {
                 {/* Social Media */}
                 <div className="mt-8 lg:mt-auto">
                   <hr className="border-gray-200" />
-                  <div className="flex items-center justify-between mt-7">
-                    <p className="text-lg font-semibold text-black">Follow us on</p>
-                    <ul className="flex items-center justify-end space-x-3">
+                  <div className="flex items-center justify-center mt-7">
+                    <ul className="flex items-center justify-center space-x-3">
                       {/* Facebook */}
                       <li>
                         <a
                           href="https://www.facebook.com/khairo.debz?locale=fr_FR"
-                          className="flex items-center justify-center text-white bg-[#1877F2] rounded-full w-8 h-8"
+                          className="flex items-center justify-center text-white bg-[#1877F2] rounded-full w-10 h-10"
                           title="Facebook"
+                          target="_blank"
+
                         >
-                          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                          <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M22 12a10 10 0 1 0-11.5 9.87v-6.99h-2.3v-2.88h2.3V9.41c0-2.27 1.35-3.52 3.42-3.52.99 0 2.02.18 2.02.18v2.22h-1.14c-1.13 0-1.48.7-1.48 1.42v1.7h2.52l-.4 2.88h-2.12v6.99A10 10 0 0 0 22 12z" />
                           </svg>
                         </a>
                       </li>
 
                       {/* LinkedIn */}
+
                       <li>
                         <a
-                          href="www.linkedin.com/in/kheireddine-debz-9b4b25290"
-                          className="flex items-center justify-center text-white bg-[#0A66C2] rounded-full w-8 h-8"
+                          href="https://www.linkedin.com/in/kheireddine-debz-9b4b25290"
+                          className="flex items-center justify-center text-white bg-[#0A66C2] rounded-full w-10 h-10"
                           title="LinkedIn"
+                          aria-label="LinkedIn Profile"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4zM8.5 8h3.6v2.1h.05c.5-.95 1.7-2 3.5-2 3.75 0 4.45 2.45 4.45 5.65V24h-4v-8.35c0-2-.03-4.55-2.75-4.55s-3.2 2.15-3.2 4.4V24h-4z" />
+                          <svg
+                            className="w-5 h-5"
+                            viewBox="0 0 448 512"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.49 0 53.5S24.09-1.1 53.79-1.1c29.45 0 53.78 24.6 53.78 54.6 0 29.98-24.33 54.6-53.78 54.6zM447.9 448h-92.4V302.4c0-34.7-12.5-58.4-43.6-58.4-23.8 0-38 16-44.3 31.4-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-268.1 0-296H267v41.9c12.3-19 34.2-46.1 83.3-46.1 60.8 0 106.6 39.7 106.6 125.2V448z" />
                           </svg>
                         </a>
                       </li>
+
+
 
                       {/* GitHub */}
                       <li>
                         <a
                           href="https://github.com/Khairodoudou"
-                          className="flex items-center justify-center text-white bg-[#333] rounded-full w-8 h-8"
+                          className="flex items-center justify-center text-white bg-[#333] rounded-full w-10 h-10"
                           title="GitHub"
+                          target="_blank"
                         >
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.6-4-1.6-.6-1.5-1.5-1.8-1.5-1.8-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 2.8 1.4 3.5 1.1.1-.8.4-1.4.8-1.8-2.7-.3-5.6-1.3-5.6-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.6-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.6 11.6 0 016 0C17 5.8 18 6 18 6c.7 1.7.2 2.9.1 3.2.7.8 1.2 1.8 1.2 3.1 0 4.5-2.9 5.5-5.6 5.8.4.3.8 1 .8 2v3c0 .3.2.6.8.5A12 12 0 0012 .5z" />
                           </svg>
                         </a>
                       </li>
 
-                      {/* Telegram */}
-                      <li>
-                        <a
-                          href="https://t.me/+213696566905"
-                          className="flex items-center justify-center text-white bg-[#0088cc] rounded-full w-8 h-8"
-                          title="Telegram"
-                        >
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                 <path d="M9.036 16.518l-.39 5.13c.558 0 .796-.24 1.095-.525l2.625-2.49 5.445 3.99c1.005.555 1.725.27 1.98-.93l3.6-16.875h.005c.27-1.26-.45-1.755-1.44-1.455L2.41 9.27c-1.23.42-1.215 1.02-.21 1.29l5.58 1.74L18.87 4.5 9.036 16.518z" />
+                    {/* Telegram */}
+<li>
+  <a
+    href="https://t.me/+213696566905"
+    className="flex items-center justify-center text-white bg-[#0088cc] rounded-full w-10 h-10"
+    title="Telegram"
+    aria-label="Telegram Contact"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg
+      className="w-6 h-6"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M9.036 16.518l-.39 5.13c.558 0 .796-.24 1.095-.525l2.625-2.49 5.445 3.99c1.005.555 1.725.27 1.98-.93l3.6-16.875h.005c.27-1.26-.45-1.755-1.44-1.455L2.41 9.27c-1.23.42-1.215 1.02-.21 1.29l5.58 1.74L18.87 4.5 9.036 16.518z" />
+    </svg>
+  </a>
+</li>
 
-                          </svg>
-                        </a>
-                      </li>
 
                       {/* WhatsApp */}
                       <li>
   <a
     href="https://wa.me/213696566905" // Remplace ce numéro par le tien
     rel="noopener noreferrer"
-    className="flex items-center justify-center text-white bg-[#25D366] rounded-full w-8 h-8 transition-all duration-300"
+    className="flex items-center justify-center text-white bg-[#25D366] rounded-full w-10 h-10 transition-all duration-300"
     title="WhatsApp"
+    target="_blank"
+
   >
     <svg
-      className="w-5 h-5"
+      className="w-6 h-6"
       fill="currentColor"
       viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"

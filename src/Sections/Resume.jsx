@@ -10,7 +10,7 @@ const Resume = () => {
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-4xl lg:leading-tight">
               
               <span className="relative inline-block">
-                <span className="absolute inline-block w-full h-2 bg-red-300 bottom-1.5"></span>
+                <span className="absolute inline-block w-full h-2 bg-purple-300 bottom-1.5"></span>
                 <span className="relative">Resume</span>
               </span>
             </h2>

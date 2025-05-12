@@ -11,7 +11,7 @@ function About() {
             <h2 className="text-3xl font-bold leading-tight text-center justify-center items-center text-black sm:text-4xl lg:text-4xl lg:leading-tight">
               Learn more{" "}
               <span className="relative inline-block">
-                <span className="absolute inline-block w-full h-2 bg-red-300 bottom-1.5"></span>
+                <span className="absolute inline-block w-full h-2 bg-purple-300 bottom-1.5"></span>
                 <span className="relative">About me</span>
               </span>
             </h2>
@@ -29,7 +29,7 @@ function About() {
             <div>
 
               <p className="mt-4 text-lg text-gray-700">
-              Passionate about innovation and determined to excel in my field, I am committed to pushing my limits to achieve professional excellence. Meticulous, creative, and always seeking new challenges, I turn ideas into concrete solutions with precision and ambition.
+              Passionate about innovation and determined to excel in my field, I am committed to pushing my limits to achieve professional excellence. <span className='font-semibold'>Meticulous</span>, <b>creative</b>, and always <b>seeking</b> new <b>challenges</b>, I turn ideas into concrete solutions with <b>precision</b> and <b>ambition</b>.
               </p>
               
               <ul className="space-y-3 text-lg pt-2">
@@ -37,7 +37,7 @@ function About() {
               <span className="font-bold text-gray-900">Name :</span> <span className='text-gray-700'>Debz Kheireddine</span>
             </li>
             <li>
-              <span className="font-bold text-gray-900">Date of birth :</span> <span className='text-gray-700'> 16 / 12 / 2001 , Annaba Algerie </span> 
+              <span className="font-bold text-gray-900">Date of birth :</span> <span className='text-gray-700'> 16 / 12 / 2001 </span> 
             </li>
             <li>
               <span className="font-bold text-gray-900">Address :</span> <span className='text-gray-700'> Sidi Achour , Annaba </span>

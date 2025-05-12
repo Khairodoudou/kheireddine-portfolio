@@ -36,7 +36,7 @@ function Hero() {
         <div className="grid items-center grid-cols-1 md:grid-cols-2">
           <div className='md:text-start sm:text-center'>
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-4xl">
-              Hey 👋 I'am <br className="block sm:hidden" /> Debz Kheireddine
+              Hey 👋 I'am <br className="block sm:hidden" /> Kheireddine Debz
             </h2>
 
             <p className="max-w-xl mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
@@ -49,7 +49,7 @@ function Hero() {
 
             <p className="mt-4 text-xl text-gray-600 md:mt-8">
               <span className="relative inline-block">
-                <span className="absolute inline-block w-full bottom-0.5 h-2 bg-red-300"></span>
+                <span className="absolute inline-block w-full bottom-0.5 h-2 bg-purple-300"></span>
                 <b className="relative text-black"> Turn your vision into tailored digital solutions </b> 
               </span>
               &nbsp;
