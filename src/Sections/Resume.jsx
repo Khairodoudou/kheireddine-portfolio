@@ -2,7 +2,7 @@
 
 const Resume = () => {
   return (
-    <main className="bg-white min-h-screen py-12">
+    <main id="Resume" className="bg-white min-h-screen py-12">
       <section id="resume" className="container mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-12" data-aos="fade-up">
