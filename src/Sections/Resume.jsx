@@ -200,7 +200,7 @@ const Resume = () => {
               {/* Timeline Circle */}
               <div className="absolute left-0.5 top-7 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
               <div>
-                <h4 className="text-xl font-medium text-gray-800">Certificat  in Web Development</h4>
+                <h4 className="text-xl font-medium text-gray-800">Certificate in Web Development</h4>
                  <h5 className="text-gray-500">2022 </h5>
                 <p className="text-gray-600 font-medium">Private Vocational Training Institute – EL Quaiam</p>
               </div>
