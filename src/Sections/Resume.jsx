@@ -15,7 +15,7 @@ const Resume = () => {
               </span>
             </h2>
           <p className="text-lg text-gray-600">
-            "A concise overview highlighting my educational background, technical expertise, and hands-on experience."
+            A concise overview highlighting my educational background, technical expertise, and hands-on experience
           </p>
         </div>
 

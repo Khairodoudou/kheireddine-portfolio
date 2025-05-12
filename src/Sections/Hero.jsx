@@ -64,7 +64,8 @@ function Hero() {
               </span>
               &nbsp;
               <a
-                href="#"
+               target="_blank"
+                href="https://wa.me/213696566905"
                 title="Hire Me"
                 className="transition-all duration-200 text-sky-500 hover:text-sky-600 hover:underline"
               >

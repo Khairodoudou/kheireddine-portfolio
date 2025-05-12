@@ -21,8 +21,8 @@ function App() {
           <About/>
           <Resume/>
           <Certificat/>
-          <Contactt/>
           <Longage/>
+          <Contactt/>
           <EndSection/>
           <Footer/>
       </div>
