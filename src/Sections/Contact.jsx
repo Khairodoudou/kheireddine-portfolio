@@ -8,7 +8,7 @@ const Contactt = () => {
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-4xl lg:leading-tight">
             <span className="relative inline-block">
               <span className="absolute inline-block w-full h-2 bg-purple-300 bottom-1.5"></span>
-              <span className="relative">Contact US</span>
+              <span className="relative">Contact Me</span>
             </span>
           </h2>
           <p className="text-lg text-gray-600">
@@ -21,7 +21,7 @@ const Contactt = () => {
             {/* Form Section */}
             <div className="lg:col-span-3">
               <div className="p-6 sm:p-10">
-                <h3 className="text-2xl font-semibold text-black">Send us a message</h3>
+                <h3 className="text-2xl font-semibold text-black">Send me a message</h3>
                 <form action="#" method="POST" className="mt-8">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
                     {['Your name', 'Your email', 'Phone number', 'Subject'].map((label, i) => (

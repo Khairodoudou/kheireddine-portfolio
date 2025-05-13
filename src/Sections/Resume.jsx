@@ -31,14 +31,14 @@ const Resume = () => {
               <div className="absolute left-0.5 top-1.5 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
               <div className="mb-6">
                 <h4 className="text-xl font-medium text-gray-800">Master's Degree</h4>
-                <h5 className="text-gray-500">2024 - 2025</h5>
+                <h5 className="text-gray-500">2023 - 2025</h5>
                 <p className="text-gray-600 font-medium">Badji Mokhtar University , Annaba , Algeria</p>
                 <p className="text-gray-600">
                     Master's degree in Computer Network and Security
                 </p>
               </div>
 
-              <div className="absolute left-0.5 top-32 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
+              <div className="absolute left-0.5 sm:top-32 xs:top-48 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
               <div>
                 <h4 className="text-xl font-medium text-gray-800">Bachelor's Degree</h4>
                 <h5 className="text-gray-500">2020 - 2023</h5>
