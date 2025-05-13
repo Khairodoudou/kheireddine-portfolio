@@ -49,10 +49,8 @@ function Hero() {
 
             <p className="mt-4 text-xl text-gray-600 md:mt-8">
               <span className="relative inline-block">
-{/**
-                <span className="absolute inline-block w-full bottom-0.5 h-2 bg-purple-300"></span>
- * 
- */}                <b className="relative text-black"> Turn your vision into tailored digital solutions </b> 
+              <span className="absolute hidden sm:inline-block w-full bottom-0.5 h-2 bg-purple-300"></span>
+             <b className="relative text-black"> Turn your vision into tailored digital solutions </b> 
               </span>
               &nbsp;
               <span>
