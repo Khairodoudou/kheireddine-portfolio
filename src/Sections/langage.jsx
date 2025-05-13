@@ -43,7 +43,7 @@ const Longage = () => {
               The Stack{" "}
               <span className="relative inline-block">
                 <span className="absolute inline-block w-full h-2 bg-purple-300 bottom-1.5"></span>
-                <span className="relative">That Drives Us</span>
+                <span className="relative">That Drives Me</span>
               </span>
             </h2>
           <p className="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">
