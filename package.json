@@ -12,6 +12,7 @@
   "dependencies": {
     "@babel/core": "^7.27.1",
     "@babel/preset-env": "^7.27.2",
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.5",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
