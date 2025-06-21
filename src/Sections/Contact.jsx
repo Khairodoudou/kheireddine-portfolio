@@ -1,31 +1,43 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contactt = () => {
   const form = useRef();
+  const [message, setMessage] = useState(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+ 
     emailjs
-      .sendForm('service_789tbcs', 'template_4p72qhi', form.current, 'fDAFoKb-kSaOO8ya_')
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
       .then(
         (result) => {
           console.log('Email successfully sent!', result.text);
+          setMessage({ type: 'success', text: 'Your demande was successfully sent!' });
+          setTimeout(() => setMessage(null), 5000);
         },
         (error) => {
           console.log('Failed to send email:', error.text);
+          setMessage({ type: 'error', text: 'Failed to send your demande. Please try again.' });
+          setTimeout(() => setMessage(null), 5000);
         }
       );
 
     e.target.reset();
   };
 
+
   return (
     <section id='Contact' className="py-10 bg-gray-50 sm:py-10 lg:py-10">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-12" data-aos="fade-up">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-4xl lg:leading-tight">
+
+        <div className="text-center mb-8" data-aos="fade-up">
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-4xl">
             <span className="relative inline-block">
               <span className="absolute inline-block w-full h-2 bg-purple-300 bottom-1.5"></span>
               <span className="relative">Contact Me</span>
@@ -36,12 +48,25 @@ const Contactt = () => {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto mt-12 overflow-hidden bg-white rounded-md shadow-md lg:mt-20">
+     {/*  Alerte */}
+      {message && (
+        <div
+          className={`text-center mb-6 px-6 py-3 rounded-md text-white font-semibold ${
+            message.type === 'success' ? 'bg-green-500' : 'bg-red-500'
+          }`}
+        >
+          {message.text}
+        </div>
+      )}
+
+        <div className="max-w-6xl mx-auto mt-4 bg-white rounded-md shadow-md">
           <div className="grid items-stretch grid-cols-1 lg:grid-cols-5">
+            
             {/* Form Section */}
             <div className="lg:col-span-3">
               <div className="p-6 sm:p-10">
                 <h3 className="text-2xl font-semibold text-black">Send me a message</h3>
+
                 <form ref={form} onSubmit={sendEmail} className="mt-8">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
                     <div>
