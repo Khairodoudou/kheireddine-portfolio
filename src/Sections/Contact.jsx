@@ -1,6 +1,26 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contactt = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_789tbcs', 'template_4p72qhi', form.current, 'fDAFoKb-kSaOO8ya_')
+      .then(
+        (result) => {
+          console.log('Email successfully sent!', result.text);
+        },
+        (error) => {
+          console.log('Failed to send email:', error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <section id='Contact' className="py-10 bg-gray-50 sm:py-10 lg:py-10">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -12,7 +32,7 @@ const Contactt = () => {
             </span>
           </h2>
           <p className="text-lg text-gray-600">
-            Fill up the from and I will get back you within 24 hours
+            Fill up the form and I will get back to you within 24 hours
           </p>
         </div>
 
@@ -22,54 +42,68 @@ const Contactt = () => {
             <div className="lg:col-span-3">
               <div className="p-6 sm:p-10">
                 <h3 className="text-2xl font-semibold text-black">Send me a message</h3>
-                <form action="#" method="POST" className="mt-8">
+                <form ref={form} onSubmit={sendEmail} className="mt-8">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
-                    {['Your name', 'Your email', 'Phone number', 'Subject'].map((label, i) => (
-                      <div key={i}>
-                        <label className="text-base font-medium text-gray-900">{label}</label>
-                        <div className="mt-2.5 relative">
-                          <input
-                            type={
-                              label.includes('email')
-                                ? 'email'
-                                : label.includes('Phone')
-                                ? 'tel'
-                                : 'text'
-                            }
-                            className="block w-full px-4 py-2 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
-                            required
-                          />
-                        </div>
-                      </div>
-                    ))}
+                    <div>
+                      <label className="text-base font-medium text-gray-900">Your name</label>
+                      <input
+                        type="text"
+                        name="user_name"
+                        required
+                        className="mt-2.5 block w-full px-4 py-2 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white"
+                      />
+                    </div>
 
-                    <div className="sm:col-span-2">
-                      <label className="text-base font-medium text-gray-900">Message</label>
-                      <div className="mt-2.5 relative">
-                        <textarea
-                          rows="4"
-                          className="block w-full px-4 py-2 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md resize-y bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
-                        ></textarea>
-                      </div>
+                    <div>
+                      <label className="text-base font-medium text-gray-900">Your email</label>
+                      <input
+                        type="email"
+                        name="user_email"
+                        required
+                        className="mt-2.5 block w-full px-4 py-2 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="text-base font-medium text-gray-900">Phone number</label>
+                      <input
+                        type="tel"
+                        name="user_phone"
+                        required
+                        className="mt-2.5 block w-full px-4 py-2 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="text-base font-medium text-gray-900">Subject</label>
+                      <input
+                        type="text"
+                        name="subject"
+                        required
+                        className="mt-2.5 block w-full px-4 py-2 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white"
+                      />
                     </div>
 
                     <div className="sm:col-span-2">
-                   
-<button type='submit' className="overflow-hidden  w-32 p-2 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group">
-  submit
-  <span
-    className="absolute w-36 h-32 -top-8 -left-2 bg-sky-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-right"
-  ></span>
-  <span
-    className="absolute w-36 h-32 -top-8 -left-2 bg-sky-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-right"
-  ></span>
-  <span
-    className="absolute w-36 h-32 -top-8 -left-2 bg-sky-600 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-right"
-  ></span>
-  <span
-    className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10"
-    >submit</span>
-</button>
+                      <label className="text-base font-medium text-gray-900">Message</label>
+                      <textarea
+                        name="message"
+                        rows="4"
+                        required
+                        className="mt-2.5 block w-full px-4 py-2 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 resize-y focus:outline-none focus:border-blue-600 focus:bg-white"
+                      ></textarea>
+                    </div>
+
+                    <div className="sm:col-span-2">
+                      <button
+                        type="submit"
+                        className="relative overflow-hidden w-32 p-2 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer group"
+                      >
+                        <span className="z-10 relative">Send</span>
+                        <span className="absolute w-36 h-32 -top-8 -left-2 bg-sky-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-right"></span>
+                        <span className="absolute w-36 h-32 -top-8 -left-2 bg-sky-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-right"></span>
+                        <span className="absolute w-36 h-32 -top-8 -left-2 bg-sky-600 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-right"></span>
+                      </button>
 
                     </div>
                   </div>
