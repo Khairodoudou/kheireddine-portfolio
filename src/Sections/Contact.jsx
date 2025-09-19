@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-=======
->>>>>>> 0e0bf1e (add section projects)
 
 const Contactt = () => {
   const form = useRef();

@@ -7,13 +7,8 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # Chemins des dossiers
-<<<<<<< HEAD
-dossier_source = r"C:\Users\21369\Pictures\img_khairo"
-dossier_destination = r"C:\Users\21369\Desktop\kheireddine-portfolio\src\images"
-=======
-dossier_source = r"C:\Users\APPLe\Desktop\pp"
+dossier_source = r"C:\Users\APPLe\Desktop\certif_web"
 dossier_destination = r"C:\Users\APPLe\Desktop\kheireddine-portfolio\src\images"
->>>>>>> 0e0bf1e (add section projects)
 
 # Créer le dossier de destination s'il n'existe pas
 if not os.path.exists(dossier_destination):
