@@ -87,6 +87,7 @@ const Certificat = () => {
           ))}
         </div>
 
+<<<<<<< HEAD
          {/*
 <div className='pt-12 text-center flex container justify-center items-center'>
   <button className="relative group cursor-pointer text-sky-50 overflow-hidden h-16 w-64 rounded-md bg-sky-800 p-2 flex justify-center items-center font-extrabold">
@@ -100,6 +101,9 @@ const Certificat = () => {
 */}
 
 
+=======
+        
+>>>>>>> 0e0bf1e (add section projects)
       </div>
     </section>
   );

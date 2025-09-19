@@ -18,6 +18,7 @@
     "cors": "^2.8.5",
     "daisyui": "^5.0.35",
     "express": "^5.1.0",
+    "framer-motion": "^12.23.15",
     "lucide-react": "^0.508.0",
     "nodemailer": "^7.0.3",
     "preline": "^3.0.1",

@@ -8,6 +8,7 @@ import Longage from "./Sections/langage.jsx";
 import EndSection from "./Sections/EndSection.jsx";
 import Footer  from "./Components/Footer.jsx"
 import { Contact } from "lucide-react";
+import Projects from "./Sections/Projects.jsx";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Hero/>
           <About/>
           <Resume/>
+          <Projects/>
           <Certificat/>
           <Longage/>
           <Contactt/>

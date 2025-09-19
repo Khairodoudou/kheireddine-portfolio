@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+=======
+>>>>>>> 0e0bf1e (add section projects)
 
 const Contactt = () => {
   const form = useRef();
@@ -164,7 +167,7 @@ const Contactt = () => {
                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                           />
                         ),
-                        text: 'kheireddinedebz.com',
+                        text: 'kheireddinedebz@gmail.com',
                       },
                       {
                         icon: (
