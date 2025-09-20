@@ -22,6 +22,7 @@ function Header() {
           <a href="#Home" className="text-gray-600 hover:text-blue-500 transition">Home</a>
           <a href="#About" className="text-gray-600 hover:text-blue-500 transition">About</a>
           <a href="#Resume" className="text-gray-600 hover:text-blue-500 transition">Resume</a>
+          <a href="#Projects" className="text-gray-600 hover:text-blue-500 transition">Projects</a>
           <a href="#Certificate" className="text-gray-600 hover:text-blue-500 transition">Certificate</a>
           <a href="#Contact" className="text-gray-600 hover:text-blue-500 transition">Contact</a>
         </nav>
@@ -44,6 +45,7 @@ function Header() {
           <a href="#Home" className="block text-gray-600 hover:text-blue-500">Home</a>
           <a href="#About" className="block text-gray-600 hover:text-blue-500">About</a>
           <a href="#Resume" className="block text-gray-600 hover:text-blue-500">Resume</a>
+          <a href="#Projects" className="block text-gray-600 hover:text-blue-500">Projects</a>
           <a href="#Certificate" className="block text-gray-600 hover:text-blue-500">Certificate</a>
           <a href="#Contact" className="block text-gray-600 hover:text-blue-500">Contact</a>
         </div>
