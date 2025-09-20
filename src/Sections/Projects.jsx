@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import theroadace from "../images/theroadace-pic.png"; // ✅ Import local
+import BSF from "../images/BSF.png"; // ✅ Import local
 
 // ✅ Inline Card component
 function Card({ children, className }) {
@@ -21,34 +22,27 @@ function CardContent({ children, className }) {
 // ✅ Project list with imported image
 const projects = [
   {
-    title: "E-commerce Web Application",
+    title: "THE ROAD ACE",
     description:
-      "A complete website with shopping cart, online payments, and admin dashboard.",
-    tech: ["React", "Tailwind", "Node.js"],
-    demo: "https://mon-serveur.com/ecommerce",
+    "Freight transport company with vehicles under 3.5T, providing deliveries throughout France with 20m³ tail lift.",
+    tech: ["React", "Tailwind", "Laravel"],
+    demo: "https://theroadace.fr/",
     image: theroadace, // ✅ utilise l'import, pas un string
   },
   {
-    title: "Face Recognition System",
+    title: "BSF Plumbing Solutions",
     description:
-      "Real-time face detection and identification using TensorFlow.js.",
-    tech: ["TensorFlow.js", "React", "Webcam API"],
-    demo: "https://mon-serveur.com/reconnaissance-faciale",
-    image: "/images/facial-recognition.jpg", // reste en public/
+    "Providing reliable and eco-friendly plumbing solutions with quality products and exceptional service.",
+    tech: ["React", "Bootstrap", "Laravel"],
+    demo: "https://bfs-orcin.vercel.app/",
+    image: BSF, // reste en public/
   },
-  {
-    title: "Professional Landing Page",
-    description:
-      "Modern, responsive landing page to showcase a product or service.",
-    tech: ["React", "TailwindCSS"],
-    demo: "https://mon-serveur.com/landingpage",
-    image: "/images/landingpage.jpg",
-  },
+
 ];
 
 export default function Projects() {
   return (
-    <section className="py-20 bg-gray-50" id="projects">
+    <section className="py-20 bg-gray-50" id="Projects">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Title */}
         <div className="text-center mb-12">
