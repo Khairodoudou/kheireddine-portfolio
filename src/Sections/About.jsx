@@ -58,7 +58,7 @@ function About() {
                 </li>
                 <li>
                   <span className="font-bold text-gray-900">Military situation :</span>{" "}
-                  <span className="text-gray-700">Yellow Card</span>
+                  <span className="text-gray-700">Exempté</span>
                 </li>
                 <li>
                   <span className="font-bold text-gray-900">Freelance :</span>{" "}
