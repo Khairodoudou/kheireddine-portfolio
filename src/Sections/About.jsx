@@ -71,8 +71,8 @@ function About() {
 
         <div className="pt-12 bg-gray-50 text-center flex justify-center items-center">
           <a
-              href="/kheireddine_debz_CV.pdf"
-              download="kheireddine_debz_CV.pdf"
+              href="/kheireddine_debz_resume.pdf"
+              download="kheireddine_debz_resume.pdf"
               aria-label="Download CV"
               className="relative group cursor-pointer text-sky-50 overflow-hidden h-16 w-64 rounded-md bg-sky-800 p-2 flex justify-center items-center font-extrabold"
           >
