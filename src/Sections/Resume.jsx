@@ -153,19 +153,44 @@ const Resume = () => {
             <div className="relative pl-8">
               {/* Timeline Line */}
               <div className="absolute left-2 top-0 h-full w-1 bg-blue-500"></div>
-              {/* Timeline Circles */}
-              <div className="absolute left-0.5 top-2 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
-              <div className="mb-6">
+
+              {/* Experience 1 */}
+              <div className="relative mb-6">
+                <div className="absolute -left-[30px] top-1.5 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
+                <h4 className="text-xl font-medium text-gray-800">Enseignant Vacataire en Informatique</h4>
+                <h5 className="text-gray-500">Sep 2025 - Jan 2026</h5>
+                <p className="text-gray-600 font-medium">Département d'Électronique, Université Badji Mokhtar – Annaba, Algérie</p>
+                <ul className="list-disc pl-5 text-gray-600 mt-1">
+                  <li>Enseignement et encadrement des travaux pratiques (TP) d'informatique pour les étudiants universitaires.</li>
+                  <li>Accompagnement pédagogique sur les fondamentaux de la programmation, l'algorithmique et les outils informatiques.</li>
+                </ul>
+              </div>
+
+              {/* Experience 2 */}
+              <div className="relative mb-6">
+                <div className="absolute -left-[30px] top-1.5 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
+                <h4 className="text-xl font-medium text-gray-800">Employé – Cyber Café SmileNet</h4>
+                <h5 className="text-gray-500">Juillet 2025</h5>
+                <p className="text-gray-600 font-medium">Cyber Café SmileNet – Annaba, Algérie</p>
+                <ul className="list-disc pl-5 text-gray-600 mt-1">
+                  <li>Accueil et assistance des clients dans leurs démarches numériques et bureautiques.</li>
+                  <li>Gestion des impressions, numérisations et encaissement des paiements.</li>
+                  <li>Maintenance de base du parc d'ordinateurs et support du réseau local.</li>
+                </ul>
+              </div>
+
+              {/* Experience 3 */}
+              <div className="relative mb-6">
+                <div className="absolute -left-[30px] top-1.5 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
                 <h4 className="text-xl font-medium text-gray-800">IT and Network Security Intern</h4>
                 <h5 className="text-gray-500">2025 - 15 days</h5>
                 <p className="text-gray-600 font-medium">Asmidal Groupe – Annaba, Algeria</p>
-                <ul className="list-disc pl-5 text-gray-600">
+                <ul className="list-disc pl-5 text-gray-600 mt-1">
                   <li>Gained practical exposure to network infrastructure including switches, routers, and structured cabling.</li>
                   <li>Observed and supported configuration of FortiGate UTM appliances: firewall, IDS, web filtering, antivirus.</li>
                   <li>Developed a strong understanding of secure network architecture and common cybersecurity protocols.</li>
                 </ul>
               </div>
-           
             </div>
 
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Certification</h3>
