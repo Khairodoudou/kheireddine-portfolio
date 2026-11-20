@@ -157,25 +157,25 @@ const Resume = () => {
               {/* Experience 1 */}
               <div className="relative mb-6">
                 <div className="absolute -left-[30px] top-1.5 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
-                <h4 className="text-xl font-medium text-gray-800">Enseignant Vacataire en Informatique</h4>
+                <h4 className="text-xl font-medium text-gray-800">Part-Time Computer Science Instructor</h4>
                 <h5 className="text-gray-500">Sep 2025 - Jan 2026</h5>
-                <p className="text-gray-600 font-medium">Département d'Électronique, Université Badji Mokhtar – Annaba, Algérie</p>
+                <p className="text-gray-600 font-medium">Electronics Department, Badji Mokhtar University – Annaba, Algeria</p>
                 <ul className="list-disc pl-5 text-gray-600 mt-1">
-                  <li>Enseignement et encadrement des travaux pratiques (TP) d'informatique pour les étudiants universitaires.</li>
-                  <li>Accompagnement pédagogique sur les fondamentaux de la programmation, l'algorithmique et les outils informatiques.</li>
+                  <li>Taught and supervised computer science practical lab sessions for university students.</li>
+                  <li>Provided pedagogical support on programming fundamentals, algorithms, and computing tools.</li>
                 </ul>
               </div>
 
               {/* Experience 2 */}
               <div className="relative mb-6">
                 <div className="absolute -left-[30px] top-1.5 w-4 h-4 bg-blue-400 rounded-full border-2 border-white"></div>
-                <h4 className="text-xl font-medium text-gray-800">Employé – Cyber Café SmileNet</h4>
-                <h5 className="text-gray-500">Juillet 2025</h5>
-                <p className="text-gray-600 font-medium">Cyber Café SmileNet – Annaba, Algérie</p>
+                <h4 className="text-xl font-medium text-gray-800">IT Assistant – SmileNet Cyber Café</h4>
+                <h5 className="text-gray-500">July 2025</h5>
+                <p className="text-gray-600 font-medium">SmileNet Cyber Café – Annaba, Algeria</p>
                 <ul className="list-disc pl-5 text-gray-600 mt-1">
-                  <li>Accueil et assistance des clients dans leurs démarches numériques et bureautiques.</li>
-                  <li>Gestion des impressions, numérisations et encaissement des paiements.</li>
-                  <li>Maintenance de base du parc d'ordinateurs et support du réseau local.</li>
+                  <li>Welcomed and assisted customers with digital services and computer applications.</li>
+                  <li>Managed printing operations, document scanning, and payment transactions.</li>
+                  <li>Performed basic computer hardware maintenance and local network troubleshooting.</li>
                 </ul>
               </div>
 
@@ -187,7 +187,6 @@ const Resume = () => {
                 <p className="text-gray-600 font-medium">Asmidal Groupe – Annaba, Algeria</p>
                 <ul className="list-disc pl-5 text-gray-600 mt-1">
                   <li>Gained practical exposure to network infrastructure including switches, routers, and structured cabling.</li>
-                  <li>Observed and supported configuration of FortiGate UTM appliances: firewall, IDS, web filtering, antivirus.</li>
                   <li>Developed a strong understanding of secure network architecture and common cybersecurity protocols.</li>
                 </ul>
               </div>
