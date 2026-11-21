@@ -35,7 +35,7 @@ const Certificat = () => {
       description:
         "Professional Training Institute – Web Development.",
       author: "Annaba",
-      date: "Mars 04, 2023",
+      date: "Mar 04, 2023",
     },
     {
       image: larief,
@@ -78,23 +78,27 @@ const Certificat = () => {
 
         <div className="grid max-w-md  grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-x-16 gap-y-12">
           {cards.map((card, index) => (
-            <div key={index} className='border-1 p-3 rounded-md border-gray-100'>
-              <span href="#" title="" className="block aspect-w-4 aspect-h-3">
-                <img className="object-cover w-full h-full rounded-md" src={card.image} alt="" />
-              </span>
-              <span className={`inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full mt-9 ${card.categoryColor}`}>
-                {card.category}
-              </span>
-              <p className="mt-6 text-xl font-semibold">
-                <span href="#" title="" className="text-black">
-                  {card.title}
+            <div key={index} className='border-1 p-3 rounded-md border-gray-100 flex flex-col justify-between h-full bg-white shadow-sm hover:shadow-md transition-shadow'>
+              <div>
+                <div className="block w-full h-52 overflow-hidden rounded-md bg-gray-50">
+                  <img className="object-cover w-full h-full rounded-md" src={card.image} alt={card.title} />
+                </div>
+                <span className={`inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full mt-6 ${card.categoryColor}`}>
+                  {card.category}
                 </span>
-              </p>
-              <p className="mt-4 text-gray-600">{card.description}</p>
-              <div className="h-0 mt-6 mb-4 border-t-2 border-gray-200 border-dashed"></div>
-              <span className="block text-sm font-bold tracking-widest text-gray-500 uppercase">
-                {card.author} . {card.date}
-              </span>
+                <p className="mt-4 text-xl font-semibold">
+                  <span className="text-black">
+                    {card.title}
+                  </span>
+                </p>
+                <p className="mt-3 text-gray-600 text-sm leading-relaxed">{card.description}</p>
+              </div>
+              <div>
+                <div className="h-0 mt-6 mb-4 border-t-2 border-gray-200 border-dashed"></div>
+                <span className="block text-sm font-bold tracking-widest text-gray-500 uppercase">
+                  {card.author} · {card.date}
+                </span>
+              </div>
             </div>
           ))}
         </div>
