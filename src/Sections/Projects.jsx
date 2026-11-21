@@ -28,7 +28,7 @@ const projects = [
   {
     title: "Textile DZ",
     description:
-      "Premier réseau et plateforme digitale en Algérie dédiée au secteur textile et couture, connectant créateurs, ateliers, modélistes et merceries à travers 69 wilayas.",
+      "The premier digital network and platform in Algeria dedicated to the textile and sewing industry, connecting designers, workshops, pattern makers, and fabric stores across 69 wilayas.",
     tech: ["Next.js", "NestJS", "PostgreSQL", "Tailwind CSS"],
     demo: "https://textile-dz.tech/",
     image: textileDz,
