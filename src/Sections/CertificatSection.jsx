@@ -1,6 +1,7 @@
 import certification from '../images/certif_of_participation.png';
 import qualam from '../images/qualam.png';
 import bigdata from '../images/bigdata.png';
+import larief from '../images/certif-larief.jpg';
 
 
 const Certificat = () => {
@@ -11,40 +12,40 @@ const Certificat = () => {
       categoryColor: "text-rose-500 bg-rose-100",
       title: "Certificate of Participation",
       description:
-        "a l'événement de l'IA et de la cybersécurité.",
-      author: "En - ligne",
+        "AI & Cybersecurity event – Online participation.",
+      author: "Online",
       date: "Jan 01, 2024",
     },
     {
       image: bigdata,
-      category: "Intelligence Artificielle",
+      category: "Artificial Intelligence",
       categoryColor: "text-sky-500 bg-sky-100",
       title: "Big Data",
       description:
-        "IBM DeveloperSkills Network",
-      author: "En - ligne",
+        "IBM Developer Skills Network – Online.",
+      author: "Online",
       date: "Jan 27, 2024",
     },
     {
       image: qualam,
       category: "Web Development",
       categoryColor: "text-yellow-500 bg-yellow-100",
-      title: "Certificat  in Web Development",
+      title: "Certificate in Web Development",
       description:
-        "Établissement  de formation professionnelle",
+        "Professional Training Institute – Web Development.",
       author: "Annaba",
       date: "Mars 04, 2023",
     },
-    // {
-//   image: sql,
-//   category: "Web Development",
-//   categoryColor: "text-yellow-500 bg-yellow-100",
-//   title: "SQL Certificate",
-//   description: "Coursera - Meta",
-//   author: "En - ligne",
-//   date: "Jan 01, 2024",
-// }
-
+    {
+      image: larief,
+      category: "Entrepreneurship",
+      categoryColor: "text-green-600 bg-green-100",
+      title: "Certificate of Participation",
+      description:
+        "Badji Mokhtar University – LARIEF Lab · Entrepreneurship Academic Day",
+      author: "Annaba",
+      date: "Nov 17, 2026",
+    },
   ];
 
   return (
