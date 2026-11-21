@@ -144,16 +144,12 @@ const Resume = () => {
               {/* Timeline Line */}
               <div className="absolute left-2 top-2 bottom-2 w-1 bg-blue-500"></div>
 
-              {/* Experience: Deputy Technical Director - AL Riyada Al Kanouniya */}
+              {/* Experience: Computer Science Instructor - ECTI */}
               <div className="relative mb-6">
                 <div className="absolute -left-[30px] top-1.5 w-4 h-4 bg-blue-400 rounded-full border-2 border-white shadow-sm"></div>
-                <h4 className="text-xl font-semibold text-gray-800">Deputy Technical Director</h4>
-                <h5 className="text-sm font-medium text-blue-600">2025 - Present</h5>
-                <p className="text-gray-700 font-medium mt-0.5">AL Riyada Al Kanouniya – Annaba, Algeria</p>
-                <ul className="list-disc pl-5 text-gray-600 text-sm mt-1.5 space-y-1">
-                  <li>Steering digital transformation, software strategy, and technical architecture for legal consulting solutions.</li>
-                  <li>Leading technical teams, evaluating tech stacks, and enforcing data privacy and security compliance.</li>
-                </ul>
+                <h4 className="text-xl font-semibold text-gray-800">Computer Science Instructor</h4>
+                <h5 className="text-sm font-medium text-blue-600">2025 - 2026</h5>
+                <p className="text-gray-700 font-medium mt-0.5">Central School of Technology and Computer Science (ECTI) – Annaba, Algeria</p>
               </div>
 
               {/* Experience: Founder & Lead Developer - Algorix Agency */}
