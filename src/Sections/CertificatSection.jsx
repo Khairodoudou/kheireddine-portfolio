@@ -2,6 +2,7 @@ import certification from '../images/certif_of_participation.png';
 import qualam from '../images/qualam.png';
 import bigdata from '../images/bigdata.png';
 import larief from '../images/certif-larief.jpg';
+import startupPatent from '../images/certif-startup-patent.jpg';
 
 
 const Certificat = () => {
@@ -45,6 +46,16 @@ const Certificat = () => {
         "Badji Mokhtar University – LARIEF Lab · Entrepreneurship Academic Day",
       author: "Annaba",
       date: "Nov 17, 2026",
+    },
+    {
+      image: startupPatent,
+      category: "Innovation & Startup",
+      categoryColor: "text-purple-600 bg-purple-100",
+      title: "Startup & Patent Certificate",
+      description:
+        "Badji Mokhtar University – Faculty of Technology · Ref: UBMA-STARTUP-2023-00316",
+      author: "Annaba",
+      date: "Aug 08, 2023",
     },
   ];
 
