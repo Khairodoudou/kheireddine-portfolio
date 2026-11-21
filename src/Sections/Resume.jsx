@@ -99,7 +99,16 @@ const Resume = () => {
                 <div className="absolute -left-[30px] top-1.5 w-4 h-4 bg-purple-400 rounded-full border-2 border-white shadow-sm"></div>
                 <h4 className="text-lg font-semibold text-gray-800">Backend, Databases & APIs</h4>
                 <p className="text-gray-600 text-sm mt-1 leading-relaxed">
-                  Node.js, NestJS, Python, PHP, Laravel, PostgreSQL, MySQL, MongoDB, RESTful APIs, AI / OCR Integration.
+                  Node.js, NestJS, Python, PHP, Laravel, PostgreSQL, MySQL, SQLite, RESTful APIs, AI / OCR Integration.
+                </p>
+              </div>
+
+              {/* Startup Mentorship & Incubation */}
+              <div className="relative mb-6">
+                <div className="absolute -left-[30px] top-1.5 w-4 h-4 bg-purple-400 rounded-full border-2 border-white shadow-sm"></div>
+                <h4 className="text-lg font-semibold text-gray-800">Startup Mentorship & Innovation Guidance</h4>
+                <p className="text-gray-600 text-sm mt-1 leading-relaxed">
+                  Active guidance and technical mentorship for emerging student startups and university incubation programs (Decree 1275). Assisting founders from concept ideation and MVP prototyping to technology roadmapping, patent alignment, and market readiness.
                 </p>
               </div>
 

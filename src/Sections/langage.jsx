@@ -12,7 +12,7 @@ import cyber from '../images/cyber.jpg';
 import network from '../images/network.png';
 import ai from '../images/ai.png';
 import sqll from '../images/sqll.png';
-import mongodb from '../images/mongodb.png';
+import sqlite from '../images/sqlite.svg';
 
 const technologies = [
   { name: 'HTML', role: 'Markup Language', img: html },
@@ -23,7 +23,7 @@ const technologies = [
   { name: 'Material UI', role: 'React UI Library', img: materialui },
   { name: 'React', role: 'JavaScript Library', img: reactImg },
    { name: 'SQL', role: 'Relational Database', img: sqll },
-  { name: 'MongoDB', role: 'NoSQL Database', img: mongodb },
+  { name: 'SQLite', role: 'Embedded Database', img: sqlite },
   { name: 'Git', role: 'Version Control', img: git },
   { name: 'Node.js', role: 'Runtime Environment', img: nodejs },
   { name: 'Python', role: 'Programming Language', img: python },
