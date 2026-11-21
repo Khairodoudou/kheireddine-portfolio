@@ -2,11 +2,11 @@
 import { motion as Motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import textileDz from "../images/textile-dz-pc.png";
+import autolocDz from "../images/autoloc-dz.jpg";
 import cyber from "../images/cyber.jpg";
 import aipic from "../images/aipic.jpg";
 import coding from "../images/coding.jpg";
 import cybersec from "../images/cybersec.jpg";
-import networkImg from "../images/network.png";
 
 // ✅ Inline Card component
 function Card({ children, className }) {
@@ -32,6 +32,14 @@ const projects = [
     tech: ["Next.js", "NestJS", "PostgreSQL", "Tailwind CSS"],
     demo: "https://textile-dz.tech/",
     image: textileDz,
+  },
+  {
+    title: "AutoLoc DZ",
+    description:
+      "Premier car rental web platform in Annaba, Algeria. Features real-time vehicle booking, comprehensive fleet catalog of 20+ vehicles, and seamless multi-agency pickup management.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Vercel"],
+    demo: "https://autoloc-dz.vercel.app/",
+    image: autolocDz,
   },
   {
     title: "NetGuard – Security Scanner",
@@ -64,14 +72,6 @@ const projects = [
     tech: ["Cisco", "FortiGate", "Wireshark", "Network Sec"],
     demo: "https://github.com/Khairodoudou",
     image: cybersec,
-  },
-  {
-    title: "Secure VoIP & Cloud Network",
-    description:
-      "Enterprise communications infrastructure setup featuring Asterisk VoIP telephony, WireGuard VPN tunneling, and QoS traffic priority.",
-    tech: ["VoIP / SIP", "Linux", "WireGuard", "Networking"],
-    demo: "https://github.com/Khairodoudou",
-    image: networkImg,
   },
 ];
 
