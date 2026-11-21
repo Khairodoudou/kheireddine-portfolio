@@ -4,9 +4,9 @@ import { ExternalLink } from "lucide-react";
 import textileDz from "../images/textile-dz-pc.png";
 import autolocDz from "../images/autoloc-dz.jpg";
 import dortoiri from "../images/dortoiri.jpg";
+import taysir from "../images/taysir.jpg";
+import autilinkDz from "../images/autilink-dz.jpg";
 import cyber from "../images/cyber.jpg";
-import aipic from "../images/aipic.jpg";
-import cybersec from "../images/cybersec.jpg";
 
 // ✅ Inline Card component
 function Card({ children, className }) {
@@ -50,28 +50,28 @@ const projects = [
     image: dortoiri,
   },
   {
+    title: "Taysir Compta",
+    description:
+      "The premier AI-powered accounting and tax SaaS platform in Algeria. Automates invoice data entry via OCR, secures tax deadlines (G50, IBS, IFU), and simplifies real-time bank reconciliation.",
+    tech: ["Next.js", "AI / OCR", "FinTech", "Tailwind CSS"],
+    demo: "https://taysiiir.vercel.app/fr",
+    image: taysir,
+  },
+  {
+    title: "AutiLink DZ",
+    description:
+      "Algerian digital healthcare platform dedicated to autism spectrum care. Connects families with pediatric specialists and care centers for structured daily tracking, real-time reports, and direct collaboration.",
+    tech: ["Next.js", "React", "HealthTech", "Tailwind CSS"],
+    demo: "https://autillink-dz.vercel.app/",
+    image: autilinkDz,
+  },
+  {
     title: "NetGuard – Security Scanner",
     description:
       "Network vulnerability assessment and port discovery tool designed to analyze enterprise subnets and detect unauthorized services.",
     tech: ["Python", "Linux", "Network Security", "Bash"],
     demo: "https://github.com/Khairodoudou",
     image: cyber,
-  },
-  {
-    title: "AI Document Intelligence",
-    description:
-      "Smart document parsing application leveraging computer vision and machine learning models for automated data extraction.",
-    tech: ["Python", "AI / Vision", "React", "FastAPI"],
-    demo: "https://github.com/Khairodoudou",
-    image: aipic,
-  },
-  {
-    title: "Enterprise UTM & Network Topology",
-    description:
-      "Multi-tier simulated network infrastructure with VLAN segmentation, OSPF routing, firewall security policies, and VPN tunnels.",
-    tech: ["Cisco", "FortiGate", "Wireshark", "Network Sec"],
-    demo: "https://github.com/Khairodoudou",
-    image: cybersec,
   },
 ];
 
