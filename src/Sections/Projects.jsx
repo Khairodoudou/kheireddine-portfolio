@@ -32,7 +32,6 @@ const projects = [
     tech: ["Next.js", "NestJS", "PostgreSQL", "Tailwind CSS"],
     demo: "https://textile-dz.tech/",
     image: textileDz,
-    isMockup: true,
   },
   {
     title: "NetGuard – Security Scanner",
@@ -108,22 +107,12 @@ export default function Projects() {
               className="h-full"
             >
               <Card>
-                {/* Project Image */}
-                <div
-                  className={`overflow-hidden flex items-center justify-center h-52 ${
-                    project.isMockup
-                      ? "bg-gradient-to-b from-gray-100 to-gray-200 p-2"
-                      : "bg-gray-100"
-                  }`}
-                >
+                {/* Project Image: 100% plein écran edge-to-edge */}
+                <div className="overflow-hidden bg-gray-100 h-52 w-full">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className={`w-full h-full transition-transform duration-300 hover:scale-105 ${
-                      project.isMockup
-                        ? "object-contain drop-shadow-md"
-                        : "object-cover object-center"
-                    }`}
+                    className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
                   />
                 </div>
                 <CardContent>
