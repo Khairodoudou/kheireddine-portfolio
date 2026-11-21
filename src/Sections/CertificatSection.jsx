@@ -3,6 +3,7 @@ import qualam from '../images/qualam.png';
 import bigdata from '../images/bigdata.png';
 import larief from '../images/certif-larief.jpg';
 import startupPatent from '../images/certif-startup-patent.jpg';
+import healthaegisCertif from '../images/healthaegis-certif.jpg';
 
 
 const Certificat = () => {
@@ -57,6 +58,16 @@ const Certificat = () => {
       author: "Annaba",
       date: "Aug 08, 2023",
     },
+    {
+      image: healthaegisCertif,
+      category: "Digital Health",
+      categoryColor: "text-teal-600 bg-teal-100",
+      title: "Certificate of Recognition",
+      description:
+        "Higher School of Management (ESSG Annaba) · Recognition for valuable contribution to HealthAegis project.",
+      author: "Annaba",
+      date: "Jun 2026",
+    },
   ];
 
   return (
@@ -76,7 +87,7 @@ const Certificat = () => {
           </p>
         </div>
 
-        <div className="grid max-w-md  grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-x-16 gap-y-12">
+        <div className="grid max-w-md grid-cols-1 mx-auto mt-12 md:max-w-4xl md:grid-cols-2 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-8">
           {cards.map((card, index) => (
             <div key={index} className='border-1 p-3 rounded-md border-gray-100 flex flex-col justify-between h-full bg-white shadow-sm hover:shadow-md transition-shadow'>
               <div>
