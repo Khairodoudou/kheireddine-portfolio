@@ -6,7 +6,7 @@ import autolocDz from "../images/autoloc-dz.jpg";
 import dortoiri from "../images/dortoiri.jpg";
 import taysir from "../images/taysir.jpg";
 import autilinkDz from "../images/autilink-dz.jpg";
-import cyber from "../images/cyber.jpg";
+import algorix from "../images/algorix.jpg";
 
 // ✅ Inline Card component
 function Card({ children, className }) {
@@ -66,12 +66,12 @@ const projects = [
     image: autilinkDz,
   },
   {
-    title: "NetGuard – Security Scanner",
+    title: "Algorix Agency",
     description:
-      "Network vulnerability assessment and port discovery tool designed to analyze enterprise subnets and detect unauthorized services.",
-    tech: ["Python", "Linux", "Network Security", "Bash"],
-    demo: "https://github.com/Khairodoudou",
-    image: cyber,
+      "Full-service Algerian digital agency specializing in custom desktop software, web applications, and mobile apps — accompanying businesses from design to launch with high-performance, tailor-made solutions.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Full-Stack"],
+    demo: "https://algorix-agency.com/",
+    image: algorix,
   },
 ];
 
