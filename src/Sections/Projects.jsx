@@ -3,9 +3,9 @@ import { motion as Motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import textileDz from "../images/textile-dz-pc.png";
 import autolocDz from "../images/autoloc-dz.jpg";
+import dortoiri from "../images/dortoiri.jpg";
 import cyber from "../images/cyber.jpg";
 import aipic from "../images/aipic.jpg";
-import coding from "../images/coding.jpg";
 import cybersec from "../images/cybersec.jpg";
 
 // ✅ Inline Card component
@@ -42,6 +42,14 @@ const projects = [
     image: autolocDz,
   },
   {
+    title: "Dortoiri",
+    description:
+      "Modern offline Property Management System (PMS) tailored for Algerian dormitories. Ultra-fast, legally compliant desktop software engineered to manage residents, bookings, and revenue 100% offline.",
+    tech: ["Electron.js", "React", "Tailwind CSS", "Offline PMS"],
+    demo: "https://www.dortoiri.app/",
+    image: dortoiri,
+  },
+  {
     title: "NetGuard – Security Scanner",
     description:
       "Network vulnerability assessment and port discovery tool designed to analyze enterprise subnets and detect unauthorized services.",
@@ -56,14 +64,6 @@ const projects = [
     tech: ["Python", "AI / Vision", "React", "FastAPI"],
     demo: "https://github.com/Khairodoudou",
     image: aipic,
-  },
-  {
-    title: "EduPortal – Academic Platform",
-    description:
-      "Department management portal designed for organizing courses, lab practicals (TP), student submissions, and grading.",
-    tech: ["React", "Tailwind CSS", "Laravel", "MySQL"],
-    demo: "https://github.com/Khairodoudou",
-    image: coding,
   },
   {
     title: "Enterprise UTM & Network Topology",
