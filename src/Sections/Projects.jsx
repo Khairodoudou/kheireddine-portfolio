@@ -1,10 +1,12 @@
 // src/Sections/Projects.jsx
 import { motion as Motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import textileDz from "../images/textile-dz-pc.png";
 import cyber from "../images/cyber.jpg";
 import aipic from "../images/aipic.jpg";
 import coding from "../images/coding.jpg";
 import cybersec from "../images/cybersec.jpg";
+import networkImg from "../images/network.png";
 
 // ✅ Inline Card component
 function Card({ children, className }) {
@@ -23,6 +25,15 @@ function CardContent({ children, className }) {
 
 // ✅ Project list
 const projects = [
+  {
+    title: "Textile DZ",
+    description:
+      "Premier réseau et plateforme digitale en Algérie dédiée au secteur textile et couture, connectant créateurs, ateliers, modélistes et merceries à travers 69 wilayas.",
+    tech: ["Next.js", "NestJS", "PostgreSQL", "Tailwind CSS"],
+    demo: "https://textile-dz.tech/",
+    image: textileDz,
+    isMockup: true,
+  },
   {
     title: "NetGuard – Security Scanner",
     description:
@@ -54,6 +65,14 @@ const projects = [
     tech: ["Cisco", "FortiGate", "Wireshark", "Network Sec"],
     demo: "https://github.com/Khairodoudou",
     image: cybersec,
+  },
+  {
+    title: "Secure VoIP & Cloud Network",
+    description:
+      "Enterprise communications infrastructure setup featuring Asterisk VoIP telephony, WireGuard VPN tunneling, and QoS traffic priority.",
+    tech: ["VoIP / SIP", "Linux", "WireGuard", "Networking"],
+    demo: "https://github.com/Khairodoudou",
+    image: networkImg,
   },
 ];
 
@@ -90,11 +109,21 @@ export default function Projects() {
             >
               <Card>
                 {/* Project Image */}
-                <div className="overflow-hidden bg-gray-100">
+                <div
+                  className={`overflow-hidden flex items-center justify-center h-52 ${
+                    project.isMockup
+                      ? "bg-gradient-to-b from-gray-100 to-gray-200 p-2"
+                      : "bg-gray-100"
+                  }`}
+                >
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-52 object-cover object-center transition-transform duration-300 hover:scale-105"
+                    className={`w-full h-full transition-transform duration-300 hover:scale-105 ${
+                      project.isMockup
+                        ? "object-contain drop-shadow-md"
+                        : "object-cover object-center"
+                    }`}
                   />
                 </div>
                 <CardContent>
