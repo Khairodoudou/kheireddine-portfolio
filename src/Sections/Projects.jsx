@@ -1,8 +1,6 @@
 // src/Sections/Projects.jsx
 import { motion as Motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
-import theroadace from "../images/theroadace-pic.png";
-import BSF from "../images/BSF.png";
 import cyber from "../images/cyber.jpg";
 import aipic from "../images/aipic.jpg";
 import coding from "../images/coding.jpg";
@@ -25,22 +23,6 @@ function CardContent({ children, className }) {
 
 // ✅ Project list
 const projects = [
-  {
-    title: "THE ROAD ACE",
-    description:
-      "Freight transport company with vehicles under 3.5T, providing deliveries throughout France with 20m³ tail lift.",
-    tech: ["React", "Tailwind CSS", "Laravel"],
-    demo: "https://theroadace.fr/",
-    image: theroadace,
-  },
-  {
-    title: "BSF Plumbing Solutions",
-    description:
-      "Providing reliable and eco-friendly plumbing solutions with quality products and exceptional service.",
-    tech: ["React", "Bootstrap", "Laravel"],
-    demo: "https://bfs-orcin.vercel.app/",
-    image: BSF,
-  },
   {
     title: "NetGuard – Security Scanner",
     description:
