@@ -18,12 +18,12 @@ const Contactt = () => {
       .then(
         (result) => {
           console.log('Email successfully sent!', result.text);
-          setMessage({ type: 'success', text: 'Your demande was successfully sent!' });
+          setMessage({ type: 'success', text: 'Your message was successfully sent!' });
           setTimeout(() => setMessage(null), 5000);
         },
         (error) => {
           console.log('Failed to send email:', error.text);
-          setMessage({ type: 'error', text: 'Failed to send your demande. Please try again.' });
+          setMessage({ type: 'error', text: 'Failed to send your message. Please try again.' });
           setTimeout(() => setMessage(null), 5000);
         }
       );

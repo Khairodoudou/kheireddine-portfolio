@@ -42,12 +42,12 @@ function Header() {
       {/* Menu Mobile */}
       {isOpen && (
         <div className="md:hidden bg-white px-4 pb-4 space-y-2 shadow">
-          <a href="#Home" className="block text-gray-600 hover:text-blue-500">Home</a>
-          <a href="#About" className="block text-gray-600 hover:text-blue-500">About</a>
-          <a href="#Resume" className="block text-gray-600 hover:text-blue-500">Resume</a>
-          <a href="#Projects" className="block text-gray-600 hover:text-blue-500">Projects</a>
-          <a href="#Certificate" className="block text-gray-600 hover:text-blue-500">Certificate</a>
-          <a href="#Contact" className="block text-gray-600 hover:text-blue-500">Contact</a>
+          <a href="#Home" onClick={() => setIsOpen(false)} className="block py-1 text-gray-600 hover:text-blue-500">Home</a>
+          <a href="#About" onClick={() => setIsOpen(false)} className="block py-1 text-gray-600 hover:text-blue-500">About</a>
+          <a href="#Resume" onClick={() => setIsOpen(false)} className="block py-1 text-gray-600 hover:text-blue-500">Resume</a>
+          <a href="#Projects" onClick={() => setIsOpen(false)} className="block py-1 text-gray-600 hover:text-blue-500">Projects</a>
+          <a href="#Certificate" onClick={() => setIsOpen(false)} className="block py-1 text-gray-600 hover:text-blue-500">Certificate</a>
+          <a href="#Contact" onClick={() => setIsOpen(false)} className="block py-1 text-gray-600 hover:text-blue-500">Contact</a>
         </div>
       )}
     </header>
