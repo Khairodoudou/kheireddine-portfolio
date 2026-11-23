@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import Preloader from "./Components/Preloader.jsx";
 import Header from "./Components/Header.jsx";
 import Hero from "./Sections/Hero.jsx";
 import About from "./Sections/About.jsx";
@@ -11,20 +14,29 @@ import Footer from "./Components/Footer.jsx";
 import BackToTop from "./Components/BackToTop.jsx";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   return (
-    <div>
-      <Header />
-      <Hero />
-      <About />
-      <Resume />
-      <Projects />
-      <Certificat />
-      <Longage />
-      <Contactt />
-      <EndSection />
-      <Footer />
-      <BackToTop />
-    </div>
+    <>
+      <AnimatePresence mode="wait">
+        {loading && (
+          <Preloader key="preloader" onComplete={() => setLoading(false)} />
+        )}
+      </AnimatePresence>
+      <div>
+        <Header />
+        <Hero />
+        <About />
+        <Resume />
+        <Projects />
+        <Certificat />
+        <Longage />
+        <Contactt />
+        <EndSection />
+        <Footer />
+        <BackToTop />
+      </div>
+    </>
   );
 }
 
