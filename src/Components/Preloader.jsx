@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion as Motion } from 'framer-motion';
 import { Terminal, Shield, Cpu } from 'lucide-react';
+import kheireddineAvatar from '../images/kheireddine_avatar.jpg';
 
 export default function Preloader({ onComplete }) {
   const [progress, setProgress] = useState(0);
@@ -74,22 +75,28 @@ export default function Preloader({ onComplete }) {
       />
 
       <div className="relative z-10 flex flex-col items-center max-w-md w-full px-6">
-        {/* Glowing Monogram Badge */}
+        {/* Glowing Avatar Photo */}
         <Motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="relative mb-6"
         >
-          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-600/20 via-cyan-500/10 to-transparent border border-blue-500/30 flex items-center justify-center backdrop-blur-xl shadow-[0_0_35px_rgba(59,130,246,0.3)]">
-            <span className="font-mono text-2xl font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent">
-              &lt;KD /&gt;
+          <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full p-[3px] bg-gradient-to-tr from-blue-600 via-cyan-400 to-blue-500 shadow-[0_0_35px_rgba(59,130,246,0.45)]">
+            <img
+              src={kheireddineAvatar}
+              alt="Kheireddine Debz"
+              className="w-full h-full rounded-full object-cover object-top border-2 border-[#070B14]"
+            />
+            {/* Small active online badge */}
+            <span className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-[#070B14] shadow-sm flex items-center justify-center">
+              <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
             </span>
           </div>
 
           {/* Pulse ring */}
           <div
-            className="absolute -inset-1 rounded-2xl border border-blue-400/20 animate-ping pointer-events-none"
+            className="absolute -inset-1 rounded-full border border-blue-400/25 animate-ping pointer-events-none"
             style={{ animationDuration: '2.5s' }}
           />
         </Motion.div>
